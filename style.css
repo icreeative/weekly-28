@@ -18,3 +18,142 @@
 .uppercase{
     text-transform: uppercase;
 }
+
+.bordering{
+    border: 1px solid #3b3b3b;
+    height: 100%;
+}
+
+.active, .active a, a:hover, .color-pink{
+    color: #f5989d;
+}
+
+.carousel-indicators .active{
+    background: #f5989d;    
+}
+
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+section h2{
+    color: #f5989d;
+}
+
+#home .container{
+    color: #fff;
+    background: #252525;
+    padding: 50px;
+    height: 100%;
+}
+
+#home ul{
+    height: 0;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li{
+    display: block;
+    padding: 3px 15px;
+}
+
+#home ul li:first-child{
+    padding-left: 30px;
+}
+
+#home ul li:last-child{
+    padding-right: 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    transition: .5s ease;
+}
+
+#home nav ul {
+    transform: translateY(-50%);
+}
+
+#home nav ul li{
+    background: #252525;
+}
+
+.brand, #home h3{
+    font-family: "Frank Ruhl Libre", sans-serif;
+}
+
+.brand{
+   font-size: 1.8rem;
+}
+
+.brand a:hover{
+    color: #fff;
+    cursor: default;
+}
+.carousel{
+    padding: 0 30px;
+    transform:translateY(50%);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#carousel-header{
+    display: flex;
+    transform:translateY(-50%);
+    align-items: center;
+    justify-content: space-between
+}
+
+.carousel-content{
+    text-align: center;
+}
+
+#home .carousel-content h3{
+    font-size: 2rem;
+}
+#home .carousel-content p{
+    font-size: 3rem;
+}
+
+.carousel-indicators{
+    display: flex;
+    width: 60px;
+    justify-content: space-between;
+    list-style: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    background: #3b3b3b;
+    transform: rotate(45deg)
+}
+
