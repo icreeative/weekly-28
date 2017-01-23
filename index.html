@@ -1,20 +1,275 @@
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="hashtags" content="rwd,masonry,html5markup,mq,flexbox">
-    <title>Sophia</title>
+    <title>Sophia - I take photos</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:700,900|Josefin+Sans:300,700" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:700,900|Josefin+Sans:300,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
+
+    <header id="home">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#" title="home">home</a></li>
+                    <li><a href="#albums" title="albums">albums</a></li>
+                    <li><a href="#" title="shop">shop</a></li>
+                    <li class="brand" title="sophia"><a href="#home">sophia</a></li>
+                    <li><a href="#" title="news">news</a></li>
+                    <li><a href="#" title="about">about</a></li>
+                    <li><a href="#" title="contact">contact</a></li>
+                </ul>
+            </nav>
+            <div id="carousel-header">
+                <div class="left-sign">
+                    <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+                </div>
+                <div class="right-sign">
+                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </div>
+                <div class="carousel-content">
+                    <h3>I take photos</h3>
+                    <p class="uppercase">in the woods</p>
+                </div>
+                <ol class="carousel-indicators">
+                    <li class="active item"></li>
+                    <li class="item"></li>
+                    <li class="item"></li>
+                </ol>
+            </div>
+        </div>
+    </header>
+    <section id="services">
+        <div class="container vertical">
+            <div class="heading">
+                <h2>my thoughts</h2>
+                <p>Apaft from photographu, </br>I also love to write</p>
+            </div>
+            <div class="body">
+                <a href="#" class="service">
+                    <img src="img/service-1.png" alt="weddings" class="img-responsive">
+                    <p class="uppercase">weddings</p>
+                </a>
+                <a href="#" class="service">
+                    <img src="img/service-2.png" alt="events" class="img-responsive">
+                    <p class="uppercase">events</p>
+                </a>
+                <a href="#" class="service">
+                    <img src="img/service-3.png" alt="parties" class="img-responsive">
+                    <p class="uppercase">parties</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="albums">
+        <div class="container horizontal">
+            <div class="heading">
+                <h2>my albums</h2>
+                <p>I love photographing</br>a multitude of places</br>and subjects</p>
+                <button type="button" class="btn">view all albums</button>
+            </div>
+            <div class="body">
+                <div class="gallery">imgase</div>
+            </div>
+        </div>
+    </section>
+    <section id="news">
+        <div class="container vertical">
+            <div class="heading">
+                <h2>my thoughts</h2>
+                <p>Apart from photography,</br>I also love to write</p>
+            </div>
+            <div class="body">
+                <div id="carousel-news">
+                    <div class="left-sign">
+                        <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+                    </div>
+                    <div class="right-sign">
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                    </div>
+                    <div class="carousel-content">
+                        <article>
+                            <div class="news">
+                                <div class="news-body">
+                                    <h3>Here's some insight about how I set up my working space</h3>
+                                    <time datetime="" class="uppercase">december 12th, 2016</time>
+                                    <div class="news-text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea soluta aspernatur aut,
+                                            sed voluptates explicabo veniam officiis architecto, qui recusandae doloremque,
+                                            modi laudantium unde animi. Vitae, sint impedit est. Laudantium. Lorem ipsum
+                                            dolor sit amet, consectetur adipisicing elit. Soluta totam maxime eveniet, impedit
+                                            deserunt quo aperiam et voluptatem eius cupiditate repudiandae nemo culpa amet
+                                            laborum ducimus, libero cum. Sequi, totam!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="news">
+                                <div class="news-body">
+                                    <h3>Here's some insight about how I set up my working space</h3>
+                                    <time datetime="" class="uppercase">december 12th, 2016</time>
+                                    <div class="news-text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea soluta aspernatur aut,
+                                            sed voluptates explicabo veniam officiis architecto, qui recusandae doloremque,
+                                            modi laudantium unde animi. Vitae, sint impedit est. Laudantium. Lorem ipsum
+                                            dolor sit amet, consectetur adipisicing elit. Soluta totam maxime eveniet, impedit
+                                            deserunt quo aperiam et voluptatem eius cupiditate repudiandae nemo culpa amet
+                                            laborum ducimus, libero cum. Sequi, totam!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <ol class="carousel-indicators">
+                        <li class="active item"></li>
+                        <li class="item"></li>
+                        <li class="item"></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container horizontal">
+            <div class="body">
+                <img src="img/service-1.png" alt="black space">
+            </div>
+            <div class="heading">
+                <h2>sophia mcgregor</h2>
+                <p>Young and avid</br>photographer based</br>in Los Angeles</p>
+                <button type="button" class="btn">mode about me</button>
+            </div>
+        </div>
+    </section>
+    <section id="shop">
+        <div class="container vertical">
+            <div class="heading">
+                <h2>my shop</h2>
+                <p>Buy high-quailty prints</br> of my photos</p>
+            </div>
+            <div class="body">
+                <div id="carousel-shop">
+                    <div class="left-sign">
+                        <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+                    </div>
+                    <div class="right-sign">
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                    </div>
+                    <div class="carousel-content">
+                        <article>
+                            <div class="shop-item">
+                                <span class="shop-cost">$25</span>
+                                <img src="img/shop-1.png" alt="landscape">
+                            </div>
+                        </article>
+                        <article>
+                            <div class="shop-item">
+                                <span class="shop-cost">$25</span>
+                                <img src="img/shop-2.png" alt="landscape">
+                            </div>
+                        </article>
+                        <article>
+                            <div class="shop-item">
+                                <span class="shop-cost">$25</span>
+                                <img src="img/shop-3.png" alt="landscape">
+                            </div>
+                        </article>
+                        <article>
+                            <div class="shop-item">
+                                <span class="shop-cost">$25</span>
+                                <img src="img/shop-4.png" alt="landscape">
+                            </div>
+                        </article>
+                        <article>
+                            <div class="shop-item">
+                                <span class="shop-cost">$25</span>
+                                <img src="img/shop-5.png" alt="landscape">
+                            </div>
+                        </article>
+                        <article>
+                            <div class="shop-item">
+                                <span class="shop-cost">$25</span>
+                                <img src="img/shop-6.png" alt="landscape">
+                            </div>
+                        </article>
+                    </div>
+                    <ol class="carousel-indicators">
+                        <li class="active item"></li>
+                        <li class="item"></li>
+                        <li class="item"></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container horizontal">
+            <div class="heading">
+                <h2>get in touch</h2>
+                <p>Wanna say hello or hire me for your next event?</p>
+                <button type="button" class="btn">senda a message</button>
+            </div>
+            <div class="body">
+                <form class="contact-form">
+                    <label for="email">email adress</label>
+                    <input type="email" name="email" placeholder="hello@sophia.com">
+                    <div class="hr-line"></div>
+                    <label for="phone">phone number</label>
+                    <input type="tel" name="phone" placeholder="123-456-7890">
+                    <div class="hr-line"></div>
+                    <label for="twitter">twiter handle</label>
+                    <input type="text" name="twitter" placeholder="@photosophia">
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container vertical">
+            <nav id="footer-nav">
+                <ul>
+                    <li class="active"><a href="#" title="home">home</a></li>
+                    <li><a href="#albums" title="albums">albums</a></li>
+                    <li><a href="#" title="shop">shop</a></li>
+                    <li><a href="#" title="news">news</a></li>
+                    <li><a href="#" title="about">about</a></li>
+                    <li><a href="#" title="contact">contact</a></li>
+                </ul>
+            </nav>
+            <div class="hr-line"></div>
+            <div class="social-media center">
+                <a href="#twit" class="social-media-item">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="#twit" class="social-media-item">
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                </a>
+                <a href="#twit" class="social-media-item">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="#twit" class="social-media-item">
+                    <i class="fa fa-pinterest-square" aria-hidden="true"></i>
+                </a>
+                <a href="#twit" class="social-media-item">
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="hr-line"></div>
+            <div class="copyright">
+                &copy; 2017 Sophia McGregor.</br>All rights reserved.
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="main.js"></script>
 </body>
+
 
 </html>
