@@ -15,7 +15,7 @@
     font-family: "Josefin Sans", sans-serif;
 */
 
-img{
+#services img, #albums img{
     filter: brightness(0.5) grayscale(1);
     transition: .5s ease;
 }
@@ -32,8 +32,13 @@ img{
     flex-direction: column;
 }
 
+.vertical .heading{
+    margin-bottom: 60px;
+}
+
 .horizontal{
      display: flex;
+     align-items: center;
 }
 
 .uppercase{
@@ -184,11 +189,6 @@ section{
     margin: 60px 0;
 }
 
-section .heading{
-    text-align: center;
-    margin-bottom: 60px;
-}
-
 section .heading h2{
     color: #f5989d;
     text-transform: uppercase;
@@ -199,7 +199,27 @@ section .heading p{
     font-size: 2rem;
     font-family: "Frank Ruhl Libre";
     font-weight: 300;
+    margin-bottom: 15px;
 }
+
+section .container.horizontal > * {
+    flex: 1 0 50%;
+}
+
+.align-margin-right{
+    text-align: right;
+    padding-right: 80px;
+}
+
+.align-margin-left{
+    text-align: left;
+    padding-left: 80px;
+}
+
+.align-center{
+    text-align: center;
+}
+
 /* services */
 #services .container{
     padding: 30px 0 0 0;
@@ -213,7 +233,7 @@ section .heading p{
 }
 
 .service-inner{
-    background:#f5989d;
+    background:#f6acb0;
 }
 
 .service-inner:hover img{
@@ -229,6 +249,77 @@ section .heading p{
     transform: translateX(-50%);
 }
 
+
+.shop-item{
+    width: 33.3%;
+}
+
+#contact .body{
+    padding: 100px;
+    background: #f5989d;
+    color: #fff;
+}
+
+label{
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+
+.contact-form span{
+    font-family: "Frank Ruhl Libre", sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.hr-line{
+    height: 1px;
+    width: 100%;
+    background: #f6acb0;
+    margin: 30px 0;
+}
+
+/*Albums */
+
 footer .container{
+    color: #fff;
     background: #000;
+}
+
+footer .container-inner{
+    width: 70%;
+    padding: 80px;
+    margin: 0 auto;
+}
+
+footer .hr-line{
+    background: #222
+}
+
+.social-media-item{
+    color: #fff;
+    font-size: 3rem;
+    margin: 0 15px;
+}
+
+.copyright{
+    font-family: "Frank Ruhl Libre", sans-serif;
+    text-align: center;
+}
+
+/* button */
+
+.btn{
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    border: none;
+    padding: 10px;
+    background: #f5989d;
+    color: #fff;
+    transition: .3s ease;
+}
+
+.btn:hover{
+    background: #f6acb0;
 }
