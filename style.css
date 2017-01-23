@@ -1,0 +1,17 @@
+/*      :root{
+            name-variable: prop;
+        }
+        var(name-variable);
+
+    COLORS:
+    pink: #f5989d;
+    gray-light: #f2f2f2; ( blog ) 
+    gray: #252525; ( header)
+    border: #3b3b3b;
+    hover: #f6acb0;
+
+    FONTS:
+    font-family: "Frank Ruhl Libre", sans-serif;
+    font-family: "Josefin Sans", sans-serif;
+*/
+
