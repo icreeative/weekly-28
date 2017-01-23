@@ -15,6 +15,27 @@
     font-family: "Josefin Sans", sans-serif;
 */
 
+img{
+    filter: brightness(0.5) grayscale(1);
+    transition: .5s ease;
+}
+
+.img-responsive{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.vertical{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.horizontal{
+     display: flex;
+}
+
 .uppercase{
     text-transform: uppercase;
 }
@@ -49,11 +70,7 @@
 body{
     font-family: "Josefin Sans", sans-serif;
     font-weight: bold;
-    font-size: 14px;
-}
-
-section h2{
-    color: #f5989d;
+    font-size: 16px;
 }
 
 #home .container{
@@ -157,3 +174,61 @@ nav ul li a{
     transform: rotate(45deg)
 }
 
+.container{
+    background: #fff;
+}
+
+
+
+section{
+    margin: 60px 0;
+}
+
+section .heading{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+section .heading h2{
+    color: #f5989d;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+section .heading p{
+    font-size: 2rem;
+    font-family: "Frank Ruhl Libre";
+    font-weight: 300;
+}
+/* services */
+#services .container{
+    padding: 30px 0 0 0;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.service{
+    position: relative;
+    padding: 15px;
+}
+
+.service-inner{
+    background:#f5989d;
+}
+
+.service-inner:hover img{
+    opacity: 0.4;
+}
+
+.service p{
+    color: #fff;
+    font-size: 2rem;
+    position: absolute;
+    bottom : 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer .container{
+    background: #000;
+}
