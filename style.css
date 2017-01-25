@@ -14,6 +14,15 @@
     font-family: "Frank Ruhl Libre", sans-serif;
     font-family: "Josefin Sans", sans-serif;
 */
+.grid-item{
+    width: 25%;
+    float: left;
+}
+
+.grid-item--width{
+    width: 50%;
+}
+
 section{
     position: relative;
 }
@@ -249,13 +258,30 @@ section .container.horizontal > * {
     padding: 15px;
 }
 
-.service-inner{
+.service-inner, .grid-item{
     background:#f6acb0;
 }
 
-.service-inner:hover img{
-    opacity: 0.4;
+.service-inner:hover img, .grid-item:hover img{
+    opacity: 0.3;
+    cursor: pointer;
 }
+
+.grid-item .sign{
+    z-index: 100;
+    display: none;
+    left: 50%;
+    color: #fff;
+}
+
+.grid-item:hover .sign{
+    display: block;
+}
+
+.grid-item:hover{
+    position: relative;
+}
+
 
 .service p{
     color: #fff;
@@ -266,7 +292,7 @@ section .container.horizontal > * {
     transform: translateX(-50%);
 }
 /* about */
-#about .body, #albums .body{
+#about .body{
     height: 400px;
 }
 
