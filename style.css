@@ -14,6 +14,9 @@
     font-family: "Frank Ruhl Libre", sans-serif;
     font-family: "Josefin Sans", sans-serif;
 */
+.white-bg{
+    background: #fff;
+}
 
 #services img, #albums img{
     filter: brightness(0.5) grayscale(1);
@@ -76,6 +79,7 @@ body{
     font-family: "Josefin Sans", sans-serif;
     font-weight: bold;
     font-size: 16px;
+    width: 100%;
 }
 
 #home .container{
@@ -144,10 +148,7 @@ nav ul li a{
 }
 
 #carousel-header{
-    display: flex;
     transform:translateY(-50%);
-    align-items: center;
-    justify-content: space-between
 }
 
 .carousel-content{
@@ -159,6 +160,10 @@ nav ul li a{
 }
 #home .carousel-content p{
     font-size: 3rem;
+}
+
+#home .sign:hover{
+    color: #f5989d;
 }
 
 .carousel-indicators{
@@ -203,7 +208,7 @@ section .heading p{
 }
 
 section .container.horizontal > * {
-    flex: 1 0 50%;
+    flex: 1;
 }
 
 .align-margin-right{
@@ -248,14 +253,115 @@ section .container.horizontal > * {
     left: 50%;
     transform: translateX(-50%);
 }
+/* about */
+#about .body, #albums .body{
+    height: 400px;
+}
 
+.black-bg{
+    background: #000;
+}
+
+/* news */
+.carousel-news{
+    position: relative;
+}
+
+.sign{
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+
+ .left-sign{
+
+    left: 5%;
+}
+.right-sign{
+    right: 5%;
+}
+
+.news{
+    display: flex;
+}
+
+.news-inner{
+    padding: 10px;
+    display: flex;
+}
+
+
+
+.news-wrap{
+    display: flex;
+    align-items: stretch;
+}
+
+.news-wrap > *{
+   flex-basis: 50%;
+}
+.news-body{
+    text-align: left;
+    padding: 40px;
+    background: #f2f2f2;
+}
+
+#news h3{
+    font-family: "Frank Ruhl Libre";
+    font-weight: 300;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.news-heading{
+    margin-bottom: 1rem;
+}
+
+.news-published{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #f5989d;
+}
+.news-text{
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.carousel-news .carousel-content{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.carousel-shop{
+    position: relative;
+}
+
+.carousel-shop .carousel-content{
+    width: 70%;
+    margin: 0 auto;
+    flex-flow: row wrap;
+    justify-content: center;
+}
 
 .shop-item{
-    width: 33.3%;
+    position: relative;
+    display: flex;
+    margin: 10px;
+    width: 320px;
+    height: 320px;
+    background: #f2f2f2;
+}
+
+.shop-cost{
+    color: #f6acb0;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 
 #contact .body{
-    padding: 100px;
+    padding: 5rem;
     background: #f5989d;
     color: #fff;
 }
@@ -289,7 +395,7 @@ footer .container{
 
 footer .container-inner{
     width: 70%;
-    padding: 80px;
+    padding: 80px 0;
     margin: 0 auto;
 }
 
@@ -322,4 +428,126 @@ footer .hr-line{
 
 .btn:hover{
     background: #f6acb0;
+}
+
+@media( min-width: 992px){
+    .horizontal{
+        flex-direction: row;
+    }
+
+
+}
+
+@media (max-width: 991px){
+    .carousel-shop .carousel-content{
+        width: 70%;
+    }
+    .hide-small{
+        display: none;
+    }
+
+
+    section{
+        margin: 50px 0 0 0;
+    }
+
+    #about .container{
+        padding: 80px 0;
+        background: #000;
+    }
+
+    #about .heading{
+        margin:0;
+        padding: 40px 0 ;
+        width: 100%;
+    }
+
+    .horizontal{
+        flex-direction: column;
+    }
+    .news{
+        flex-basis: auto;
+    }
+
+    .body{
+        order: 2;
+    }
+
+    .heading{
+        order: 1;
+        text-align: center;
+        padding: 0;
+        margin-bottom: 50px;
+    }
+    #contact .container{
+        width: 70%;
+        margin: 0 auto;
+        align-items: stretch;
+    }
+}
+
+#shop .sign:hover, #news .sign:hover{
+    color: #3b3b3b;
+}
+
+@media(max-width:767px){
+    .hide-md{
+        display: none;
+    }
+    #home nav ul li{
+        display: none;
+    }
+
+    #home nav ul li.brand{
+        display: block;
+    }
+}
+
+@media ( max-width: 543px){
+    #home .carousel-content h3 {
+        font-size: 1.5rem;
+    }
+    #home .carousel-content p {
+        font-size: 2rem;
+    }
+    .hide-xs{
+        display: none;
+    }
+    .carousel-shop .carousel-content, .carousel-news .carousel-content{
+        width: 100%;
+    }
+
+    .news-inner{
+        padding: 0;
+    }
+
+    .news{
+        flex-basis: auto;
+    }
+
+    .shop-item{
+        width: 100%;
+        margin: 0;
+    }
+
+    section .heading p{
+        font-size: 1.6rem;
+    }
+
+    #contact .body{
+        width: 100%;
+        padding: 3rem 2rem;
+    }
+    #contact .container{
+        width: 100%;
+    }
+
+    footer nav ul li{
+        font-size: 0.8rem;
+        padding: 3px 4px;
+    }
+    .social-media-item{
+        font-size: 2rem;
+        margin: 0 5px;
+    }
 }

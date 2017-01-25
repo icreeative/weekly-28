@@ -1,8 +1,8 @@
 <html lang="pl">
 
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
     <title>Sophia - I take photos</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:300,700,900|Josefin+Sans:300,700" rel="stylesheet">
@@ -10,7 +10,6 @@
 </head>
 
 <body>
-
     <header id="home">
         <div class="container">
             <div class="bordering">
@@ -27,14 +26,14 @@
                 </nav>
                 <div class="carousel">
                     <div id="carousel-header">
-                        <div class="left-sign">
+                        <div class="sign left-sign hide-md">
                             <i class="fa fa-2x fa-long-arrow-left" aria-hidden="true"></i>
                         </div>
                         <div class="carousel-content">
                             <h3>I take photos</h3>
                             <p class="uppercase color-pink">in the woods</p>
                         </div>
-                        <div class="right-sign">
+                        <div class="sign right-sign hide-md">
                             <i class="fa  fa-2x fa-long-arrow-right" aria-hidden="true"></i>
                         </div>
                     </div>
@@ -83,7 +82,9 @@
                 <button type="button" class="btn">view all albums</button>
             </div>
             <div class="body">
-                <div class="gallery">imgase</div>
+                <div class="body">
+                    <div class="black-bg"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -94,46 +95,54 @@
                 <p>Apart from photography,</br>I also love to write</p>
             </div>
             <div class="body">
-                <div id="carousel-news">
-                    <div class="left-sign">
-                        <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+                <div class="carousel-news">
+                    <div class="sign left-sign hide-xs">
+                        <i class="fa fa-2x fa-long-arrow-left" aria-hidden="true"></i>
                     </div>
-                    <div class="right-sign">
-                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                    <div class="sign right-sign hide-xs">
+                        <i class="fa fa-2x fa-long-arrow-right" aria-hidden="true"></i>
                     </div>
-                    <div class="carousel-content horizontal">
-                        <article>
-                            <div class="news">
-                                <div class="news-body">
-                                    <h3>Here's some insight about how I set up my working space</h3>
-                                    <time datetime="" class="uppercase">december 12th, 2016</time>
-                                    <div class="news-text">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea soluta aspernatur aut,
-                                            sed voluptates explicabo veniam officiis architecto, qui recusandae doloremque,
-                                            modi laudantium unde animi. Vitae, sint impedit est. Laudantium. Lorem ipsum
-                                            dolor sit amet, consectetur adipisicing elit. Soluta totam maxime eveniet, impedit
-                                            deserunt quo aperiam et voluptatem eius cupiditate repudiandae nemo culpa amet
-                                            laborum ducimus, libero cum. Sequi, totam!</p>
+                    <div class="carousel-content">
+                        <div class="news-wrap horizontal">
+
+                            <article class="news">
+                                <div class="news-inner">
+
+                                    <div class="news-body">
+                                        <header class="news-heading">
+                                            <h3>Here's some insight about how I set up my working space</h3>
+                                            <time datetime="" class="news-published">december 12th, 2016</time>
+                                        </header>
+                                        <div class="news-text">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea soluta aspernatur
+                                                aut, sed voluptates explicabo veniam officiis architecto, qui recusandae
+                                                doloremque, modi laudantium unde animi. Vitae, sint impedit est. Laudantium.
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta totam maxime
+                                                eveniet, impedit deserunt quo aperiam et voluptatem eius cupiditate repudiandae
+                                                nemo culpa amet laborum ducimus, libero cum. Sequi, totam!</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </article>
-                        <article>
-                            <div class="news">
-                                <div class="news-body">
-                                    <h3>Here's some insight about how I set up my working space</h3>
-                                    <time datetime="" class="uppercase">december 12th, 2016</time>
-                                    <div class="news-text">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea soluta aspernatur aut,
-                                            sed voluptates explicabo veniam officiis architecto, qui recusandae doloremque,
-                                            modi laudantium unde animi. Vitae, sint impedit est. Laudantium. Lorem ipsum
-                                            dolor sit amet, consectetur adipisicing elit. Soluta totam maxime eveniet, impedit
-                                            deserunt quo aperiam et voluptatem eius cupiditate repudiandae nemo culpa amet
-                                            laborum ducimus, libero cum. Sequi, totam!</p>
+                            </article>
+                            <article class="news hide-md">
+                                <div class="news-inner">
+
+                                    <div class="news-body">
+                                        <div class="news-heading">
+
+                                            <h3>Here's some insight about how I set up my working space</h3>
+                                            <time datetime="" class="news-published">december 12th, 2016</time>
+                                        </div>
+                                        <div class="news-text">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea soluta aspernatur
+                                                aut, sed voluptates explicabo veniam officiis architecto, qui recusandae
+                                                doloremque, modi laudantium unde animi. Vitae, sint impedit est. Laudantium.
+                                                Lorem ipsum dolor sit amet, consectetur.!</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </article>
+                            </article>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -141,10 +150,10 @@
     </section>
     <section id="about">
         <div class="container horizontal">
-            <div class="body">
-                <img src="img/service-1.png" alt="black space" class="img-responsive">
+            <div class="body black-bg">
+                
             </div>
-            <div class="heading align-margin-left">
+            <div class="heading align-margin-left white-bg">
                 <h2>sophia mcgregor</h2>
                 <p>Young and avid</br>photographer based</br>in Los Angeles</p>
                 <button type="button" class="btn">mode about me</button>
@@ -158,50 +167,45 @@
                 <p>Buy high-quailty prints</br> of my photos</p>
             </div>
             <div class="body">
-                <div id="carousel-shop">
-                    <div class="left-sign">
-                        <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+                <div class="carousel-shop">
+                    <div class="sign left-sign">
+                        <i class="fa fa-2x fa-long-arrow-left" aria-hidden="true"></i>
                     </div>
-                    <div class="right-sign">
-                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                    <div class="sign right-sign">
+                        <i class="fa fa-2x fa-long-arrow-right" aria-hidden="true"></i>
                     </div>
                     <div class="carousel-content horizontal">
-                        <article>
-                            <div class="shop-item">
-                                <span class="shop-cost">$25</span>
-                                <img src="img/shop-1.png" alt="landscape" class="img-responsive">
-                            </div>
-                        </article>
-                        <article>
-                            <div class="shop-item">
-                                <span class="shop-cost">$25</span>
-                                <img src="img/shop-2.png" alt="landscape" class="img-responsive">
-                            </div>
-                        </article>
-                        <article>
-                            <div class="shop-item">
-                                <span class="shop-cost">$25</span>
-                                <img src="img/shop-3.png" alt="landscape" class="img-responsive">
-                            </div>
-                        </article>
-                        <article>
-                            <div class="shop-item">
-                                <span class="shop-cost">$25</span>
-                                <img src="img/shop-4.png" alt="landscape" class="img-responsive">
-                            </div>
-                        </article>
-                        <article>
-                            <div class="shop-item">
-                                <span class="shop-cost">$25</span>
-                                <img src="img/shop-5.png" alt="landscape" class="img-responsive">
-                            </div>
-                        </article>
-                        <article>
-                            <div class="shop-item">
-                                <span class="shop-cost">$25</span>
-                                <img src="img/shop-6.png" alt="landscape" class="img-responsive">
-                            </div>
-                        </article>
+
+                        <div class="shop-item">
+                            <span class="shop-cost">$25</span>
+                            <img src="img/shop-1.png" alt="landscape" class="img-responsive">
+                        </div>
+
+                        <div class="shop-item">
+                            <span class="shop-cost">$25</span>
+                            <img src="img/shop-2.png" alt="landscape" class="img-responsive">
+                        </div>
+
+                        <div class="shop-item">
+                            <span class="shop-cost">$25</span>
+                            <img src="img/shop-3.png" alt="landscape" class="img-responsive">
+                        </div>
+
+                        <div class="shop-item hide-small">
+                            <span class="shop-cost">$25</span>
+                            <img src="img/shop-4.png" alt="landscape" class="img-responsive">
+                        </div>
+
+                        <div class="shop-item hide-small">
+                            <span class="shop-cost">$25</span>
+                            <img src="img/shop-5.png" alt="landscape" class="img-responsive">
+                        </div>
+
+                        <div class="shop-item hide-small">
+                            <span class="shop-cost">$25</span>
+                            <img src="img/shop-6.png" alt="landscape" class="img-responsive">
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -214,7 +218,7 @@
                 <p>Wanna say hello or hire me for your next event?</p>
                 <button type="button" class="btn">senda a message</button>
             </div>
-            <div class="body ">
+            <div class="body">
                 <div class="contact-form">
                     <label for="email">email adress</label>
                     <span>hello@sophia.com</span>
@@ -232,7 +236,7 @@
         <div class="container">
             <div class="container-inner vertical">
                 <nav id="footer-nav">
-                    <ul class="uppercase"> 
+                    <ul class="uppercase">
                         <li class="active"><a href="#" title="home">home</a></li>
                         <li><a href="#albums" title="albums">albums</a></li>
                         <li><a href="#" title="shop">shop</a></li>
