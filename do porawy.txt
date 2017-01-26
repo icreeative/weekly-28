@@ -2,10 +2,10 @@
 (done)2. Źle używasz atrybutu „for” w tagu label
 3. Cień i obramowanie do obrazków (shop-x.png) możesz zrobić w css.
 (done) 4. Tam gdzie są grafiki z linkami do social networków chyba powinieneś ustawić text-decoration:none. U mnie w przeglądarce pojawia się takie dziwne podkreślenie jak na dołączonym obrazku.
-5. Możesz trochę inaczej używac :after i :before. Np. zamiast wstawiać tam w content encję reprezentującą strzałkę możesz ustawić content:’’ i wstawić obrazek ze strzałką w background-image
+(done) 5. Możesz trochę inaczej używac :after i :before. Np. zamiast wstawiać tam w content encję reprezentującą strzałkę możesz ustawić content:’’ i wstawić obrazek ze strzałką w background-image
 6. Przydałoby się jakieś menu, przypięte do góry
 (done) 7. Po co używasz tutaj jquery i 3 inne skrypty?
-8. Wydaje mi się, że trzeba było zrobić to zadanie wykorzystując bootstrap
+(done) 8. Wydaje mi się, że trzeba było zrobić to zadanie wykorzystując bootstrap
 
 Dodatkowo
 (done) 1. Strzałki na hoverze .grid-item:hover są krzywo (nie są wyśrodkowane pion-poziom)

@@ -95,6 +95,11 @@ section{
    clear: both;
 }
 
+#desktop .brand {
+   pointer-events: none;
+   cursor: default;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -129,27 +134,28 @@ nav ul{
 nav ul li{
     display: block;
     padding: 3px 15px;
+
 }
 
-#home ul li:first-child{
+#desktop ul li:first-child{
     padding-left: 30px;
 }
 
-#home ul li:last-child{
+#desktop ul li:last-child{
     padding-right: 30px;
 }
 
 nav ul li a{
     text-decoration: none;
     color: #fff;
-    transition: .5s ease;
+    transition: .2s ease;
 }
 
 #home nav ul {
     transform: translateY(-50%);
 }
 
-#home nav ul li{
+#desktop ul li{
     background: #252525;
 }
 
@@ -163,7 +169,6 @@ nav ul li a{
 
 .brand a:hover{
     color: #fff;
-    cursor: default;
 }
 .carousel{
     padding: 0 30px;
@@ -536,14 +541,18 @@ footer .hr-line{
 }
 
 @media(max-width:767px){
+    #desktop .brand {
+   pointer-events: auto;
+   cursor: default;
+}
     .hide-md{
         display: none;
     }
-    #home nav ul li{
+    #desktop ul li{
         display: none;
     }
 
-    #home nav ul li.brand{
+    #desktop ul li.brand{
         display: block;
     }
 }
@@ -595,4 +604,56 @@ footer .hr-line{
         font-size: 2rem;
         margin: 0 5px;
     }
+}
+#home .nav-fixed ul{
+    position: fixed;
+    background: #fff;
+    top: 40px;
+    left: 0;
+    width: 100%;   
+    height: 80px;
+    z-index: 1;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+#home .nav-fixed ul li, #mobile li{
+    background: #fff;
+}
+
+.nav-fixed ul li a, #mobile ul li a{
+    color: #252525;
+}
+
+.nav-fixed .brand:hover a{
+    color: #252525;
+}
+
+.nav-fixed li:hover a, .nav-fixed li.active a{
+    color:#f5989d;
+}
+
+.show{
+    display: block !important;
+}
+
+#mobile{
+    display: none;
+    position: fixed;
+    top: 80px;
+    z-index: 1;
+    width: 100%;
+}
+
+#mobile ul{
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    width: 100%;
+    margin-left: -51px;
+}
+
+
+#mobile li{
+    width: 100%;
+    font-size: 1.4rem;
 }
