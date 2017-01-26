@@ -1,15 +1,15 @@
 1. Strzałki + kropeczki na dole to dosyć silny indykator, że w tamtym miejscu powinna być karuzela.
-2. Źle używasz atrybutu „for” w tagu label
+(done)2. Źle używasz atrybutu „for” w tagu label
 3. Cień i obramowanie do obrazków (shop-x.png) możesz zrobić w css.
-4. Tam gdzie są grafiki z linkami do social networków chyba powinieneś ustawić text-decoration:none. U mnie w przeglądarce pojawia się takie dziwne podkreślenie jak na dołączonym obrazku.
+(done) 4. Tam gdzie są grafiki z linkami do social networków chyba powinieneś ustawić text-decoration:none. U mnie w przeglądarce pojawia się takie dziwne podkreślenie jak na dołączonym obrazku.
 5. Możesz trochę inaczej używac :after i :before. Np. zamiast wstawiać tam w content encję reprezentującą strzałkę możesz ustawić content:’’ i wstawić obrazek ze strzałką w background-image
 6. Przydałoby się jakieś menu, przypięte do góry
-7. Po co używasz tutaj jquery i 3 inne skrypty?
+(done) 7. Po co używasz tutaj jquery i 3 inne skrypty?
 8. Wydaje mi się, że trzeba było zrobić to zadanie wykorzystując bootstrap
 
 Dodatkowo
-1. Strzałki na hoverze .grid-item:hover są krzywo (nie są wyśrodkowane pion-poziom)
-2. .btn powinien mieć cursor: pointer;
+(done) 1. Strzałki na hoverze .grid-item:hover są krzywo (nie są wyśrodkowane pion-poziom)
+(done) 2. .btn powinien mieć cursor: pointer;
 3. heading align-margin-left white-bg ma białe tło, przez co zasłania ten wielki napis about (za nim).
 dodam jeszcze, że na szerszej rozdzielczości (2560px, możesz sobie w devtoolsie zasymulować taką na widoku responsywnym) strona wygląda "tak sobie". Chodzi np. o .carousel-shop .carousel-content, gdzie ustawiasz width na 70% (więc w zależności od szerokości ekranu szerokość będzie różna), więc najlepiej ustawić jakiś max-width: 1200px i cały content pięknie mieści się "na środku".
 Unikałbym <div class="body"> (imho lepiej inaczej taką klasę nazwać), pewnie można by się jeszcze przyczepić o kilka rzeczy, powywalać niepotrzebne div'y i klasy ale już dam Ci spokój, bo będziesz aż zdemotywowany 

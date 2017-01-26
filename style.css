@@ -262,24 +262,27 @@ section .container.horizontal > * {
     background:#f6acb0;
 }
 
+.grid-item{
+    position: relative;
+}
+
+.grid-item:hover:before{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    z-index: 1;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    border-left:25px solid #fff; 
+}
+
 .service-inner:hover img, .grid-item:hover img{
     opacity: 0.3;
     cursor: pointer;
-}
-
-.grid-item .sign{
-    z-index: 100;
-    display: none;
-    left: 50%;
-    color: #fff;
-}
-
-.grid-item:hover .sign{
-    display: block;
-}
-
-.grid-item:hover{
-    position: relative;
 }
 
 
@@ -424,6 +427,9 @@ label{
     margin: 30px 0;
 }
 
+.btn{
+    cursor: pointer;
+}
 /*Albums */
 
 footer .container{
@@ -445,6 +451,7 @@ footer .hr-line{
     color: #fff;
     font-size: 3rem;
     margin: 0 15px;
+    text-decoration: none;
 }
 
 .copyright{
